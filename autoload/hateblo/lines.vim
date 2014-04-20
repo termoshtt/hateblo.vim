@@ -50,7 +50,7 @@ function! hateblo#lines#parse(lines)
     call remove(a:lines, res['title_line'])
     let result['title'] = res['title']
   endif
-  let result['contents'] = join(hateblo#lines#format(a:lines), '\n')
+  let result['contents'] = join(hateblo#lines#format(a:lines), "\n")
   return result
 endfunction
 
